@@ -95,6 +95,11 @@ properties:
   webProxyHost: # <clusterIP>:<NodePort> (If Nifi service is NodePort or LoadBalancer)
   clusterPort: 6007
   boredYieldDuration: "10 millis"
+  uiAutorefreshInterval: "30 sec"
+  databaseDirectory: "../data/database_repository"
+  flowfileRepositoryDirectory: "../flowfile_repository"
+  queueSwapThreshold: 20000
+  contentRepoDirDefault: "../content_repository"
   provenanceStorage: "8 GB"
   provenanceMaxStorageTime: "10 days"
   siteToSite:
