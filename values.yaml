@@ -119,7 +119,7 @@ auth:
   SSL:
     keystorePasswd: changeMe
     truststorePasswd: changeMe
-
+ 
   # Automaticaly disabled if OIDC or LDAP enabled
   singleUser:
     username: username
