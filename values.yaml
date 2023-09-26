@@ -101,8 +101,8 @@ properties:
   queueSwapThreshold: 20000
   contentRepoDirDefault: "../content_repository"
   contentDirectories:
-    "blahkey_1": "blahvalue_1"
-    "blahkey_2": "blahvalue_2"
+    "nifi.content.repository.directory.contS1R1": "../cont-repo1/content_repository"
+    "nifi.content.repository.directory.contS1R2": "../cont-repo2/content_repository"
   provenanceDirectoryDefault: "../provenance_repository"
   provenanceStorage: "8 GB"
   provenanceMaxStorageTime: "10 days"
