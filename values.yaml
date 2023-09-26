@@ -98,12 +98,14 @@ properties:
   uiAutorefreshInterval: "30 sec"
   databaseDirectory: "../data/database_repository"
   flowfileRepositoryDirectory: "../flowfile_repository"
-  queueSwapThreshold: 5000
-  # contentDirectoryDefault: "../content_repository"
-  contentDirectories:
-    "nifi.content.repository.directory.contS1R1": "../cont-repo1/content_repository"
-    "nifi.content.repository.directory.contS1R2": "../cont-repo2/content_repository"
-    "nifi.content.repository.directory.contS1R3": "../cont-repo3/content_repository"
+  queueSwapThreshold: 20000
+  contentDirectoryDefault: "../content_repository"
+  # Comment out above contentDirectoryDefault to configure multiple content repositories within a single instance of NiFi
+  ## Multiple content repositories:
+  # contentDirectories:
+  #   "nifi.content.repository.directory.contS1R1": "../cont-repo1/content_repository"
+  #   "nifi.content.repository.directory.contS1R2": "../cont-repo2/content_repository"
+  #   "nifi.content.repository.directory.contS1R3": "../cont-repo3/content_repository"
   provenanceDirectoryDefault: "../provenance_repository"
   provenanceStorage: "8 GB"
   provenanceMaxStorageTime: "10 days"
