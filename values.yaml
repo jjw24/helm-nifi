@@ -99,9 +99,8 @@ properties:
   databaseDirectory: "../data/database_repository"
   flowfileRepositoryDirectory: "../flowfile_repository"
   queueSwapThreshold: 20000
-  # Comment out below contentDirectoryDefault to configure multiple content repositories within a single instance of NiFi
   contentDirectoryDefault: "../content_repository"
-  ## Multiple content repositories:
+  ## Configure multiple content repositories within a single instance of NiFi:
   # contentDirectories:
   #   "nifi.content.repository.directory.contS1R1": "../cont-repo1/content_repository"
   #   "nifi.content.repository.directory.contS1R2": "../cont-repo2/content_repository"
