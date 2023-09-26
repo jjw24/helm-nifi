@@ -100,6 +100,9 @@ properties:
   flowfileRepositoryDirectory: "../flowfile_repository"
   queueSwapThreshold: 20000
   contentRepoDirDefault: "../content_repository"
+  contentDirectories:
+    - "blahkey_1": "blahvalue_1"
+    - "blahkey_2": "blahvalue_2"
   provenanceDirectoryDefault: "../provenance_repository"
   provenanceStorage: "8 GB"
   provenanceMaxStorageTime: "10 days"
