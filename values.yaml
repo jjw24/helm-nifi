@@ -98,7 +98,7 @@ properties:
   uiAutorefreshInterval: "30 sec"
   databaseDirectory: "../data/database_repository"
   flowfileRepositoryDirectory: "../flowfile_repository"
-  queueSwapThreshold: "15000"
+  queueSwapThreshold: "5000"
   # contentDirectoryDefault: "../content_repository"
   contentDirectories:
     "nifi.content.repository.directory.contS1R1": "../cont-repo1/content_repository"
