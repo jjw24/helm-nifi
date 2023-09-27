@@ -1,3 +1,8 @@
+This branch is updated for deploying the chart via Rancher Fleet. Due to the size limitation of fleet deployment, documentation, test and CICD files have been [removed](https://github.com/jjw24/helm-nifi/commit/3d3dc4acda131fd4419f47a6996677b97e9ed8ff).
+
+New changes added: https://github.com/jjw24/helm-nifi/pull/1
+
+---
 # Helm Chart for Apache NiFi
 
 [![CircleCI](https://circleci.com/gh/cetic/helm-nifi.svg?style=svg)](https://circleci.com/gh/cetic/helm-nifi/tree/master) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) ![version](https://img.shields.io/github/tag/cetic/helm-nifi.svg?label=release) ![test](https://github.com/cetic/helm-nifi/actions/workflows/test.yml/badge.svg)
