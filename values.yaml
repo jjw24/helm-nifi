@@ -131,7 +131,7 @@ auth:
   SSL:
     keystorePasswd: changeMe
     truststorePasswd: changeMe
- 
+
   # Automaticaly disabled if OIDC or LDAP enabled
   singleUser:
     username: username
@@ -221,11 +221,11 @@ service:
         port: 7002
         targetPort: 7002
         #nodePort: 30702
-## Configure containerPorts section with following attributes: name, containerport and protocol. 
+## Configure containerPorts section with following attributes: name, containerport and protocol.
 containerPorts: []
 # - name: example
 #   containerPort: 1111
-#   protocol: TCP 
+#   protocol: TCP
 
 ## Configure Ingress based on the documentation here: https://kubernetes.io/docs/concepts/services-networking/ingress/
 ##
@@ -239,7 +239,8 @@ ingress:
   # If you want to change the default path, see this issue https://github.com/cetic/helm-nifi/issues/22
 
 # Amount of memory to give the NiFi java heap
-jvmMemory: 2g
+jvmMemoryArg2: 2g
+jvmMemoryArg3: 2g
 
 # Separate image for tailing each log separately and checking zookeeper connectivity
 sidecar:
