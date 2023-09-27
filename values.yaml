@@ -94,6 +94,18 @@ properties:
   httpsPort: 8443
   webProxyHost: # <clusterIP>:<NodePort> (If Nifi service is NodePort or LoadBalancer)
   clusterPort: 6007
+  boredYieldDuration: "10 millis"
+  uiAutorefreshInterval: "30 sec"
+  databaseDirectory: "../data/database_repository"
+  flowfileRepositoryDirectory: "../flowfile_repository"
+  queueSwapThreshold: 20000
+  contentDirectoryDefault: "../content_repository"
+  ## Configure multiple content repositories within a single instance of NiFi:
+  # contentDirectories:
+  #   "nifi.content.repository.directory.contS1R1": "../cont-repo1/content_repository"
+  #   "nifi.content.repository.directory.contS1R2": "../cont-repo2/content_repository"
+  #   "nifi.content.repository.directory.contS1R3": "../cont-repo3/content_repository"
+  provenanceDirectoryDefault: "../provenance_repository"
   provenanceStorage: "8 GB"
   provenanceMaxStorageTime: "10 days"
   siteToSite:
@@ -209,11 +221,11 @@ service:
         port: 7002
         targetPort: 7002
         #nodePort: 30702
-## Configure containerPorts section with following attributes: name, containerport and protocol. 
+## Configure containerPorts section with following attributes: name, containerport and protocol.
 containerPorts: []
 # - name: example
 #   containerPort: 1111
-#   protocol: TCP 
+#   protocol: TCP
 
 ## Configure Ingress based on the documentation here: https://kubernetes.io/docs/concepts/services-networking/ingress/
 ##
@@ -227,7 +239,8 @@ ingress:
   # If you want to change the default path, see this issue https://github.com/cetic/helm-nifi/issues/22
 
 # Amount of memory to give the NiFi java heap
-jvmMemory: 2g
+jvmMemoryArg2: 2g
+jvmMemoryArg3: 2g
 
 # Separate image for tailing each log separately and checking zookeeper connectivity
 sidecar:
